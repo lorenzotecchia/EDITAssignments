@@ -1,0 +1,25 @@
+\chapter{Tasks 5 (c-d)}
+
+ \begin{itemize}
+ 	\item Let's first prove the closure under concatenation of regular languages.\\
+ 	 Let $L_1$ and $L_2$ be arbitrary regular languages. Because they are regular languages, we know there are minimal DFAs for $L_1$ and $L_2$; let's call these M1 and M2, respectively.\\
+ 	 
+To see that the concatenation of these languages must be regular, construct a machine M* as follows:
+\begin{itemize}
+	\item the states of M* are the states of M1 and M2 put together
+	\item the alphabet of M* is the union of the alphabets of M1 and M2
+	\item initial state of M* is the initial state of M1
+	\item accepting states of M* are the accepting states of M2
+	\item M* has all the same transitions as M1 and M2 put together, plus empty/epsilon/lambda transitions from all the accepting states in M1 to the initial state of M2
+\end{itemize}
+
+This defines an NFA-lambda (NFA with empty/lambda/epsilon transitions). We know those are equivalent to DFAs and all DFAs can be minimized; let us call the equivalent minimal DFA M**.
+
+Because there is a minimal DFA for the concatenation of L1 and L2, the concatenation must be regular.
+\\
+Having proved that, we could see doubling each letter in each word of the language $L_1$, to form the language $L_2$ as the concatenation of $L_1$ on itself; thus proving that $L_2$ is also a regular language.
+\item we have already proved the closeness of concatenation in the previous point.\cite{Sipser:2006aa}
+
+ \end{itemize}
+ 
+ 
