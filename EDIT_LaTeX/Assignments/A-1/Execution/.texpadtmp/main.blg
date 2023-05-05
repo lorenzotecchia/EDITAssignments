@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is '/Users/lorenzotecchia/Documents/ESAMI/EDIT/EDITAssignments/EDIT_LaTeX/Assignments/A-1/Execution/.texpadtmp/main.blg'
-[32] biber-darwin:340> INFO - === Fri May  5, 2023, 16:09:07
-[40] Biber.pm:419> INFO - Reading '/Users/lorenzotecchia/Documents/ESAMI/EDIT/EDITAssignments/EDIT_LaTeX/Assignments/A-1/Execution/.texpadtmp/main.bcf'
-[76] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
-[83] Biber.pm:4419> INFO - Processing section 0
-[88] Biber.pm:4610> INFO - Looking for bibtex file '/Users/lorenzotecchia/Documents/ESAMI/EDIT/EDITAssignments/EDIT_LaTeX/Assignments/A-1/Execution/citations/assignement1.bib' for section 0
-[89] bibtex.pm:1713> INFO - LaTeX decoding ...
-[91] bibtex.pm:1519> INFO - Found BibTeX data source '/Users/lorenzotecchia/Documents/ESAMI/EDIT/EDITAssignments/EDIT_LaTeX/Assignments/A-1/Execution/citations/assignement1.bib'
-[116] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[116] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[116] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[116] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[119] bbl.pm:660> INFO - Writing '/Users/lorenzotecchia/Documents/ESAMI/EDIT/EDITAssignments/EDIT_LaTeX/Assignments/A-1/Execution/.texpadtmp/main.bbl' with encoding 'UTF-8'
-[119] bbl.pm:763> INFO - Output to /Users/lorenzotecchia/Documents/ESAMI/EDIT/EDITAssignments/EDIT_LaTeX/Assignments/A-1/Execution/.texpadtmp/main.bbl
+[30] biber-darwin:340> INFO - === Fri May  5, 2023, 16:16:12
+[38] Biber.pm:419> INFO - Reading '/Users/lorenzotecchia/Documents/ESAMI/EDIT/EDITAssignments/EDIT_LaTeX/Assignments/A-1/Execution/.texpadtmp/main.bcf'
+[74] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
+[81] Biber.pm:4419> INFO - Processing section 0
+[86] Biber.pm:4610> INFO - Looking for bibtex file '/Users/lorenzotecchia/Documents/ESAMI/EDIT/EDITAssignments/EDIT_LaTeX/Assignments/A-1/Execution/citations/assignement1.bib' for section 0
+[86] bibtex.pm:1713> INFO - LaTeX decoding ...
+[88] bibtex.pm:1519> INFO - Found BibTeX data source '/Users/lorenzotecchia/Documents/ESAMI/EDIT/EDITAssignments/EDIT_LaTeX/Assignments/A-1/Execution/citations/assignement1.bib'
+[113] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[113] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[113] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[113] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[116] bbl.pm:660> INFO - Writing '/Users/lorenzotecchia/Documents/ESAMI/EDIT/EDITAssignments/EDIT_LaTeX/Assignments/A-1/Execution/.texpadtmp/main.bbl' with encoding 'UTF-8'
+[116] bbl.pm:763> INFO - Output to /Users/lorenzotecchia/Documents/ESAMI/EDIT/EDITAssignments/EDIT_LaTeX/Assignments/A-1/Execution/.texpadtmp/main.bbl
