@@ -1,0 +1,61 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Sipser:2006aa}{book}{}
+      \name{author}{1}{}{%
+        {{hash=13b9c16a9de2bb891eb8aa2a768eb2a8}{%
+           family={Sipser},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston}%
+      }
+      \list{publisher}{1}{%
+        {Thomson Course Technology}%
+      }
+      \strng{namehash}{13b9c16a9de2bb891eb8aa2a768eb2a8}
+      \strng{fullhash}{13b9c16a9de2bb891eb8aa2a768eb2a8}
+      \strng{bibnamehash}{13b9c16a9de2bb891eb8aa2a768eb2a8}
+      \strng{authorbibnamehash}{13b9c16a9de2bb891eb8aa2a768eb2a8}
+      \strng{authornamehash}{13b9c16a9de2bb891eb8aa2a768eb2a8}
+      \strng{authorfullhash}{13b9c16a9de2bb891eb8aa2a768eb2a8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{LDR 01264cam 2200289 a 4500 001 14218587 005 20101223082022.0 008 060104s2006 maua b 001 0 eng 906 $a7$bcbc$corigcop$d2$encip$f20$gy-gencatlg 925 0 $aacquire$b2 shelf copies$xpolicy default 955 $apv19 2006-01-04 z-processor to ASCD$ajp00 2006-01-10$ijp02 2006-01-13$ejp02 2006-01-13 to Dewey$aaa07 2006-02-16$aaa29 2006-08-28 copy 2 added 010 $a 2006271030 020 $a0534950973 040 $aDLC$cDLC$dDLC 050 00 $aQA267$b.S56 2006 082 00 $a511.3/5$222 100 1 $aSipser, Michael. 245 10 $aIntroduction to the theory of computation /$cMichael Sipser. 250 $a2nd ed. 260 $aBoston :$bThomson Course Technology,$cc2006. 300 $axix, 431 p. :$bill. ;$c25 cm. 504 $aIncludes bibliographical references (p. 415-419) and index. 650 0 $aMachine theory. 650 0 $aComputational complexity. 856 42 $3Contributor biographical information$uhttp://www.loc.gov/catdir/enhancements/fy1103/2006271030-b.html 856 42 $3Publisher description$uhttp://www.loc.gov/catdir/enhancements/fy1103/2006271030-d.html 856 41 $3Table of contents only$uhttp://www.loc.gov/catdir/enhancements/fy1103/2006271030-t.html}
+      \field{edition}{2nd ed}
+      \field{isbn}{0534950973}
+      \field{title}{Introduction to the theory of computation}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb http://www.loc.gov/catdir/enhancements/fy1103/2006271030-b.html
+      \endverb
+      \verb{url}
+      \verb http://www.loc.gov/catdir/enhancements/fy1103/2006271030-b.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
