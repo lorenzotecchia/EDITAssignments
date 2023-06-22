@@ -1,0 +1,39 @@
+\chapter{Task 6}
+\section{6.a}
+To show that if L is a decidable language, then L* (the Kleene star of L) is also a decidable language, we need to demonstrate that there exists a Turing machine that can decide L*.\\
+
+Let's assume that L is a decidable language, which means there exists a Turing machine M that can decide L. We will construct a new Turing machine N that can decide L*.\\
+
+Turing machine N works as follows on input w:
+\begin{enumerate}
+	\item N first splits w into all possible partitions of substrings: w = $w_1w_2 \dots w_k$, where each wi is a substring of w.
+	\item For each partition, N simulates M on each substring wi.\\
+   - If M accepts every substring $w_i$, N proceeds to the next partition.\\
+   - If M rejects any substring $w_i$, N rejects the partition and moves on to the next one.\\
+   \item If N has gone through all possible partitions and M has accepted every substring in each partition, N accepts w. Otherwise, N rejects w.
+\end{enumerate}
+
+By construction, N will accept w if and only if every substring of w is accepted by M. This means N can decide L*.\\
+
+Therefore, if L is a decidable language, then L* is also a decidable language.\\
+\section{6.b}
+We can prove this by showing that if a language L is semi-decidable, there exists a Turing machine that can semi-decide L*, i.e., accept all strings in L* and either reject or loop indefinitely on strings not in L*.\\
+
+Assume L is a semi-decidable language, which means there exists a Turing machine M that can enumerate the strings in L. We will construct a new Turing machine N that can semi-decide L*.\\
+
+Turing machine N works as follows:
+\begin{enumerate}
+	\item N receives an input string w.
+	\item N generates all possible partitions of substrings of w: w = $w_1w_2\dots w_k$, where each $w_i$ is a substring of w.
+	\item For each partition, N simulates M on each substring $w_i$.\\
+   - If M accepts any substring wi, N proceeds to the next partition.\\
+   - If M rejects or loops indefinitely on any substring wi, N rejects the partition and moves on to the next one.\\
+	\item If N has gone through all possible partitions and M has accepted at least one substring in each partition, N accepts w. Otherwise, N rejects w.
+
+
+\end{enumerate}
+By construction, N will accept w if and only if there exists a partition of w such that M accepts at least one substring in each partition. This implies that all strings in L* will be accepted by N.\\
+
+However, it is important to note that N may loop indefinitely on some inputs not in L*. This is because if M loops indefinitely on any substring $w_i$, N will also loop indefinitely on the corresponding partition. Thus, N is only semi-decidable on L*.\\
+
+Therefore, if L is a semi-decidable language, then L* is also semi-decidable.\\

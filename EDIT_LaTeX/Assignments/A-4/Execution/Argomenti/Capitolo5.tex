@@ -1,0 +1,56 @@
+\chapter{Task 8}
+To design a Turing machine that increments a binary number represented by the input tape and halts in different states depending on whether the input is empty or not, we can follow these steps:
+\begin{enumerate}
+
+\item Set up the Turing machine:\\
+   - Define the states: $q_start$, $q_check$, $q_increment$, $q_hold$, $q_no$.\\
+   - Define the tape alphabet: \{0, 1, \#\}, where \# represents a blank symbol.\\
+   - Set the initial state to $q_start$.
+
+\item Read and validate the input:\\
+   - The Turing machine starts in state $q_start$ and scans the input tape from left to right.\\
+   - If the input tape is empty (contains only \# symbols), transition to the $q_no$ state and halt.
+
+\item Move to the rightmost symbol:\\
+   - While scanning the tape, move to the rightmost non-blank symbol (the least significant bit) of the input.
+   
+\item Check the rightmost symbol:\\
+   - In state $q_check$, check the value of the rightmost symbol.\\
+   - If it is 0, transition to $q_increment$.\\
+   - If it is 1, move left to the next bit.
+
+\item Increment the binary number:\\
+   - In state $q_increment$, change the rightmost 0 to 1.\\
+   - Move the tape head back to the rightmost position.
+
+\item Carry propagation:\\
+   - Move left until a 0 is encountered.\\
+   - Change that 0 to 1.\\
+   - Move the tape head back to the rightmost position.
+
+\item Repeat steps 4-6 until no more carry propagations are required:\\
+   - Continue moving left, checking and incrementing bits until no more carry propagations are needed (encountering a 0).
+
+\item Halt and output the result:\\
+   - In state $q_hold$, halt the Turing machine.\\
+   - The tape will now contain the binary representation of (w + 1), where w is the original binary number provided as input.
+\end{enumerate}
+The Turing machine described above will halt in different states depending on whether the input is empty or not. If the input is empty, it will halt in state $q_no$. If the input is a non-empty binary number, it will halt in state $q_hold$ after incrementing the binary number by 1.
+
+\begin{tikzpicture}[shorten >=1pt, node distance=4cm, on grid,  auto]
+  \node[state, initial] (q_start) 					{$q_{start}$};
+  \node[state] (q_check) [right=of q_start] 			{$q_{check}$};
+  \node[state] (q_increment) [right=of q_check] 		{$q_{increment}$};
+  \node[state] (q_hold) [right=of q_increment] 		{$q_{hold}$};
+  \node[state, accepting] (q_no) [below=of q_start] {$q_{no}$};
+  
+  \path[->]
+    (q_start) edge node {Read input} (q_check)
+    (q_check) edge node {Rightmost symbol = 0} (q_increment)
+    (q_check) edge [loop above] node {Move left} ()
+    (q_increment) edge node {Increment rightmost 0 to 1} (q_hold)
+    (q_increment) edge [loop above] node {Move left} ()
+    (q_hold) edge [loop above] node {Halt and output result} ()
+    (q_start) edge node {Input tape is empty} (q_no);
+
+\end{tikzpicture}
